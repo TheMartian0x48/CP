@@ -1,0 +1,60 @@
+// @author: the__martian
+// 382
+#include <bits/stdc++.h>
+using namespace std;
+
+#define rep(i, a, b) for(int i = a; i < (b); ++i)
+#define per(i, a, b) for(int i = a; i >= (b); --i)
+#define trav(a, x) for(auto &a : x)
+#define all(x) x.begin(), x.end()
+#define sz(x) (int)x.size()
+using ll = long long;
+using pii = pair<int, int>;
+using vi = vector<int>;
+
+
+int Perfect(ll n) {
+  if (n == 1) return -1;
+  int sum = 1;
+  for (int i = 2; i * i <= n; i++) {
+    if (n % i == 0) {
+      sum += i;
+      if (i * i != n)
+      sum += n / i;
+    }
+  }
+  if (sum == n) return 0;
+  else if(sum > n) return 1;
+  return -1;
+}
+
+
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+
+  ll n;
+  printf("PERFECTION OUTPUT\n");
+  while (scanf("%lld", &n), n) {
+    printf("%5lld  ",n);
+    if (Perfect(n) == 0) {
+      printf("PERFECT\n");
+    }
+    else if (Perfect(n) == 1) {
+      printf("ABUNDANT\n");
+    }
+    else 
+      printf("DEFICIENT\n");
+  }
+  printf("END OF OUTPUT\n");
+}
+
+
+
+
+
+
+
+
+
