@@ -44,15 +44,15 @@ for r in responses["subs"]:
 
 suc.sort()
 fail.sort()
-readme = open("userInfo.md", "w")
+readme = open("../userInfo.md", "w")
 
 #====================================================================
 # Info
-readme.write(f"Name : {name}\n")
-readme.write(f"Username : {username}\n")
-readme.write(f"Total Submission : {tot_sub}\n")
-readme.write(f"Successful submission : {len(suc)}\n")
-readme.write(f"Unsuccessful submission : {len(fail)}\n")
+readme.write(f"Name : {name}<br>")
+readme.write(f"Username : {username}<br>")
+readme.write(f"Total Submission : {tot_sub}<br>")
+readme.write(f"Successful submission : {len(suc)}<br>")
+readme.write(f"Unsuccessful submission : {len(fail)}<br>")
 
 #====================================================================
 # Succesful submission
@@ -64,7 +64,7 @@ for q in suc:
 
 #====================================================================
 # Unsuccessful submission
-readme.write("### Unsuccessul submission\n")
+readme.write("\n### Unsuccessul submission\n")
 readme.write("|Problem ID | Rank | Submission ID | Language |\n")
 readme.write("|:--:|:--:|:--:|:--:|\n")
 for q in fail:

@@ -1,10 +1,11 @@
-Name : ADITYA KUMAR SINGH
-Username : the__martian
-Total Submission : 330
-Successful submission : 250
-Unsuccessful submission : 80
+Name : ADITYA KUMAR SINGH <br>
+Username : the__martian <br>
+Total Submission : 330 <br>
+Successful submission : 250 <br>
+Unsuccessful submission : 80 <br>
 
 ### Successful submission
+
 |Problem ID | Rank | Submission ID | Language |
 |:--:|:--:|:--:|:--:|
 | 38 | 2605 | 25433437 | C++ 11 |
@@ -257,7 +258,9 @@ Unsuccessful submission : 80
 | 3960 | 60 | 25556196 | C++ 11 |
 | 3986 | 1213 | 25664531 | C++ 11 |
 | 4270 | 1243 | 25590981 | C++ 11 |
+
 ### Unsuccessul submission
+
 |Problem ID | Rank | Submission ID | Language |
 |:--:|:--:|:--:|:--:|
 | 44 | -1 | 25467271 | C++ 11 |
